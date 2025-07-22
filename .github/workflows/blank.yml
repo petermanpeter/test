@@ -6,13 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-  - uses: actions/checkout@v4
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.11'
-  - name: Install Jupyter and nbconvert
-    run: pip install jupyter nbconvert
-  - name: Execute notebook
-    run: jupyter nbconvert --to notebook --execute workflow/test/Weight.ipynb
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        - name: Install Jupyter and nbconvert
+        run: pip install jupyter nbconvert
+        - name: Execute notebook
+        run: jupyter nbconvert --to notebook --execute workflow/test/Weight.ipynb
 
