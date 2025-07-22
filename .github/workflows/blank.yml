@@ -12,7 +12,5 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run script
-         run:
-          pip install nbconvert
-          jupyter nbconvert --to notebook --execute Weight.ipynb
+        run: python Weight.ipynb
 
