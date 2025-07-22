@@ -11,8 +11,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        - name: Install Jupyter and nbconvert
-        run: pip install jupyter nbconvert
-        - name: Execute notebook
-        run: jupyter nbconvert --to notebook --execute workflow/test/Weight.ipynb
-
+    - name: Install Jupyter and nbconvert
+      run: pip install jupyter nbconvert
+    - name: Execute notebook
+      run: jupyter nbconvert --to notebook --execute workflow/test/Weight.ipynb
