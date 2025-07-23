@@ -14,6 +14,6 @@ jobs:
     - name: Install Jupyter and nbconvert
       run: pip install jupyter nbconvert
     - name: List all file
-      run: ls -R
+      run: ls -R | grep weight.ipynb
     - name: Execute notebook
       run: jupyter nbconvert --to notebook --execute workspaces/test/Weight.ipynb
