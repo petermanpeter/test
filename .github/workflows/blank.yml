@@ -14,4 +14,4 @@ jobs:
     - name: Install Jupyter and nbconvert
       run: pip install jupyter nbconvert
     - name: Execute notebook
-      run: jupyter nbconvert --to notebook --execute workflow/test/Weight.ipynb
+      run: jupyter nbconvert --to notebook --execute workspaces/test/Weight.ipynb
